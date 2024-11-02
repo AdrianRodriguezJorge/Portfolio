@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
 }
 
 body {
@@ -16,7 +38,8 @@ body {
 }
 
 #intro {
-    background: linear-gradient(135deg, #1b89ff, #1b89ff);
+    background: linear-gradient(135deg, #908a5c, #000000);
+    /* background: linear-gradient(135deg, #000000, #908a5c); */
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -33,6 +56,8 @@ body {
     border: 4px solid white;
     margin-bottom: 1rem;
     transition: transform 0.3s ease;
+    aspect-ratio: 9/10;
+
     object-fit: cover;
 }
 
@@ -55,10 +80,12 @@ h1 {
     margin: 0 1rem;
     font-weight: bold;
     transition: color 0.3s;
+
+    font-size: 1.2rem;
 }
 
 .bar a:hover {
-    color: #ffeb3b;
+    color: #f9e193;
 }
 
 main {
@@ -73,20 +100,11 @@ section {
 }
 
 h2 {
-    color: #1b89ff;
+    color: #7e7041;
     margin-bottom: 1rem;
     font-size: 2rem;
     position: relative;
     animation: slideIn 1s ease;
-}
-
-h2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #1b89ff;
-    margin-top: 5px;
 }
 
 .card {
@@ -99,15 +117,20 @@ h2::after {
     transition: transform 0.3s;
 }
 
+section a {
+    color: #67592b;
+    text-decoration: underline 1px ;
+}
+
 .card:hover {
     transform: translateY(-5px);
-    background-color: rgb(201, 232, 252);
+    background-color: #efe6c9;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #1b89ff;
+    background-color: #7e7041;
     color: white;
 }
 
@@ -117,8 +140,8 @@ footer {
     }
 
     .perfil_img {
-        width: 120px;
-        height: 120px;
+        width: 160px;
+        height: 160px;
     }
 }
 
