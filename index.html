@@ -6,28 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/icons8-portfolio-50 (7).png">
 </head>
 
 <body>
     <div id="intro">
         <header>
             <div class="profile">
-                <img src="profile.jpg" alt="Perfil photo" class="perfil_img">
+                <img src="images/20240616_164418.jpg" alt="Perfil photo" class="perfil_img">
                 <h1>Adrián Rodríguez Jorge</h1>
                 <p>I'm a Computer Engineering student with focus on sofware development and a great passion for
                     technology.</p>
+                <br>
+                <spam id="skills_list">Skills:</spam>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Nest.js</span>
+                <span class="skill">Vue</span>
+                <span class="skill">Git</span>
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">C</span>
+                <span class="skill">Odoo</span>
+                <span class="skill">PosgreSQL</span>
+            </div>
+
+            <div class="menu">
+                <a too href="#intro" class="menu_icon"><img src="images/icons8-home.svg" alt="Home"></a>
+                <a href="#educacion" class="menu_icon"><img src="images/icons8-books-50 (1).png" alt="Eduaction"></a>
+                <a href="#proyectos" class="menu_icon"><img src="images/icons8-coding-64.png" alt="Projects"></a>
+                <a href="#experiencia" class="menu_icon"><img src="images/icons8-portfolio-50 (1).png"
+                        alt="Work Experience"></a>
             </div>
         </header>
-
-        <nav class="bar">
-            <a href="#educacion">Education</a>
-            <a href="#proyectos">Projects</a>
-            <a href="#experiencia">Experience</a>
-        </nav>
 
     </div>
 
     <main>
+
+
         <section id="educacion">
             <h2>Education</h2>
             <div class="card">
@@ -53,20 +72,51 @@
                 <a href="https://github.com/AdrianRodriguezJorge/Huffman.git">GitHub repositoy</a>
             </div>
 
+            <div class="card">
+                <h3>Huffman</h3>
+                <p>Software to encode or decode a sentence using the Huffman algorithm.</p>
+                <a href="https://github.com/AdrianRodriguezJorge/Huffman.git">GitHub repositoy</a>
+            </div>
+
         </section>
 
         <section id="experiencia">
             <h2>Work Experience</h2>
             <div class="card">
-                <h3>CODES - ODOO Developer</h3>
+                <h3>CODES - Odoo Developer</h3>
                 <i>2024 - present</i>
             </div>
+
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 Adrián Rodríguez Jorge</p>
+        <a href="" id="down_btn">
+            <span id="down_text">Download CV</span>
+
+            <img id="down_icon" src="images/icons8-download-48.png" alt="CV">
+        </a>
+
         <p>How to reach me:</p>
+
+        <div class="social">
+            <a href="https://github.com/AdrianRodriguezJorge" target="_blank" class="icon">
+                <img src="images/icons8-github.svg" alt="GitHub">
+            </a>
+            <a href="https://cu.linkedin.com/in/adri%C3%A1n-rodr%C3%ADguez-jorge-796748336" target="_blank"
+                class="icon">
+                <img src="images/icons8-linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://t.me/Kvothe1992" target="_blank" class="icon">
+                <img src="images/icons8-telegram-app.svg" alt="Telegram">
+            </a>
+            <a href="mailto:adrianrodriguezjorge02@gmail.com?trk=%27contact-info%27" target="_blank" class="icon">
+                <img src="images/icons8-gmail-50.png" alt="Gmail">
+            </a>
+        </div>
+
+        <p id="lastone">&copy; 2024 Adrián Rodríguez Jorge</p>
     </footer>
 
     <script src="script.js"></script>
