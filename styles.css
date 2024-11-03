@@ -40,7 +40,7 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 2px solid #efe6c9;
     margin: 0;
     transition: transform 0.3s ease;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
@@ -79,10 +79,38 @@ header {
     transform: scale(1.1);
 }
 
-
-
 .perfil_img:hover {
     transform: scale(1.1);
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-box {
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.skills-header {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span {
+    font-size: 14px;
+    background-color: #efe6c9;
+    color: #54471d;
+    padding: 2px 10px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -185,7 +213,7 @@ footer {
 
     display: flex;
     align-items: center;
-    
+
 }
 
 #down_btn:hover {
@@ -223,8 +251,8 @@ footer {
     width: 40px;
     height: 40px;
 
-    transition: 0.6s linear;
-    transition-property: filter;
+    transition: 0.4s linear;
+    transition-property: filter, transform;
 }
 
 .icon:hover img {
@@ -270,12 +298,13 @@ footer {
 @media (max-width: 550px) {
     .menu {
         box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
-    
+
         gap: 20px;
         height: 30px;
     }
-    
+
     .menu img {
         width: 25px;
     }
 }
+
